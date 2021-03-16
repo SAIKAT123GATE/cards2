@@ -1,0 +1,441 @@
+@font-face {
+  font-family: "nexa-bold";
+  src: url("../fonts/Nexa-Bold.otf");
+}
+
+@font-face {
+  font-family: nexa-light;
+  src: url("../fonts/Nexa-Light.otf");
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: nexa-bold;
+  color: black;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+p {
+  font-family: nexa-light;
+  font-size: 1.2rem;
+  padding: 0.5rem 0rem 0.8rem 0.0rem;
+}
+
+h1, h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  color: black;
+}
+
+h5 {
+  font-size: 1.3rem;
+  padding-top: 0.35rem;
+}
+
+h6 {
+  font-size: 1.2;
+}
+
+button {
+  background-color: white;
+  color: black;
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 1px solid #06725c;
+}
+
+section {
+  padding: 1rem 1rem;
+  background-color: white;
+}
+
+::-webkit-input-placeholder {
+  font-size: 1.2rem;
+  padding-top: 0.8rem;
+  padding-left: 0.8rem;
+}
+
+:-ms-input-placeholder {
+  font-size: 1.2rem;
+  padding-top: 0.8rem;
+  padding-left: 0.8rem;
+}
+
+::-ms-input-placeholder {
+  font-size: 1.2rem;
+  padding-top: 0.8rem;
+  padding-left: 0.8rem;
+}
+
+::placeholder {
+  font-size: 1.2rem;
+  padding-top: 0.8rem;
+  padding-left: 0.8rem;
+}
+
+textarea {
+  border-radius: 0.5rem;
+  margin-left: 0.0rem;
+  margin-bottom: 0.5rem;
+  background-color: white;
+  width: 100%;
+  border-style: 1px black solid;
+}
+
+input {
+  width: 100%;
+  padding: 0.8rem 0rem 0.8rem 0.8rem;
+  margin: 0.5rem 0.0rem;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+}
+
+i {
+  color: #06725c;
+  font-size: 1.2rem !important;
+}
+
+label {
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  button {
+    width: 30%;
+  }
+}
+
+.section_card {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card {
+  background-color: white;
+  padding: 1rem 1rem;
+  width: 100%;
+  -webkit-box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 0.5rem;
+}
+
+.horizontal-rule {
+  border-top: 1px solid black;
+  margin-bottom: .3rem;
+  margin-top: 0.3rem;
+}
+
+/*open card*/
+.opencard .type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 0.5rem 0rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.opencard .type h4 {
+  color: #06725c;
+  font-size: 1.3rem;
+}
+
+.opencard .type #txt {
+  font-size: 1.3rem;
+  color: black;
+}
+
+.opencard .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 0.5rem 0rem;
+}
+
+.opencard .info img {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.opencard .info .name {
+  padding: 0.4rem 1rem;
+}
+
+.opencard .info .name h5 {
+  font-family: nexa-light;
+}
+
+.opencard .details {
+  padding: 0.5rem 0.0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.opencard .details .refid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 1rem;
+}
+
+.opencard .details .refid i {
+  padding-top: 0.5rem;
+}
+
+.opencard .details .refid #big {
+  font-size: 1.8rem !important;
+}
+
+.opencard .details .refid .f {
+  padding: 0rem 1rem;
+}
+
+.opencard .details .refid .f h5 {
+  padding: 0rem 0rem 0.3rem 0rem;
+  font-family: nexa-bold;
+}
+
+.opencard .details .refid .f h6 {
+  font-family: nexa-light;
+  margin-bottom: 0.5rem;
+}
+
+.opencard .btn button {
+  font-size: 1.3rem;
+  padding: 1rem 0rem 0.8rem 0rem;
+  background-color: #06725c;
+  margin-top: 0.4rem;
+  color: white;
+}
+
+.opencard .btn .btnh {
+  color: #06725c;
+  border: 1px #06725c solid;
+  background-color: white;
+}
+
+/*calling card*/
+.callingcard #txt1 {
+  color: black;
+  font-size: 1.3rem;
+}
+
+.callingcard .h4 {
+  padding: 0.5rem 0rem 0.6rem 0.0rem;
+  margin-bottom: 0.5rem;
+}
+
+.callingcard .btn2 {
+  padding: 0rem 0.5rem;
+}
+
+.callingcard .btn2 button {
+  padding: 0.8rem 0rem;
+  margin: 0.1rem 0rem 0.3rem 0rem;
+  font-size: 1.3rem;
+}
+
+/*picked up card*/
+.pickedupcard .h4 {
+  padding: 0.5rem 0rem 0.6rem 0.0rem;
+  margin-bottom: 0.5rem;
+}
+
+.pickedupcard #txt2 {
+  color: black;
+  font-size: 1.3rem;
+}
+
+.pickedupcard .btn2 {
+  padding-left: 0.1rem;
+}
+
+/*login follow up card*/
+.logfollowupcard #txt3 {
+  color: black;
+  font-size: 1.3rem;
+}
+
+.logfollowupcard .btn2 {
+  padding-left: 0.1rem;
+}
+
+/*follow up card*/
+.followupcard #txt4 {
+  color: black;
+  font-size: 1.3rem;
+}
+
+/*meeting*/
+.meeting #txt5 {
+  color: black;
+  font-size: 1.3rem;
+}
+
+.meeting .link .editlink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 1.5rem;
+}
+
+.meeting .link .editlink i {
+  font-size: 1.5rem !important;
+}
+
+.meeting .link .editlink label {
+  font-size: 1.5rem;
+  padding-left: 0.0rem;
+}
+
+.meeting .link a {
+  font-size: 1.5rem;
+  color: #06725c;
+}
+
+.meeting .link input {
+  margin-top: 1rem;
+}
+
+.meeting .link .editpart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: .3rem;
+}
+
+.meeting .link .editpart input {
+  border-top-right-radius: 0rem;
+  border-bottom-right-radius: 0rem;
+  font-size: 1.2rem;
+  width: 100%;
+  margin-right: 0rem;
+  padding-right: 0rem;
+}
+
+.meeting .link .editpart i {
+  background-color: #06725c;
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  padding-left: 0.7rem;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  position: relative;
+  margin: 1rem 0.0rem 0.5rem 0rem;
+}
+
+.meeting .radiobtn .normal input {
+  width: auto;
+  margin: .5rem 0rem;
+}
+
+.meeting .radiobtn label {
+  font-size: 1.5rem;
+}
+
+.meeting #permalink_section {
+  /* CSS3 */
+  white-space: -moz-pre-wrap;
+  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;
+  /* Opera 4-6 */
+  white-space: -o-pre-wrap;
+  /* Opera 7 */
+  word-wrap: break-word;
+  /* Internet Explorer 5.5+ */
+}
+
+@media only screen and (min-width: 768px) {
+  .card {
+    width: 30rem;
+    padding: 1.5rem 1rem;
+  }
+  .opencard .details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .opencard .details .refid {
+    width: 48%;
+  }
+  #callingcard {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  /*picked up card*/
+  .pickedupcard textarea {
+    border-radius: 0.5rem;
+  }
+  /*meeting*/
+}
+/*# sourceMappingURL=index.css.map */

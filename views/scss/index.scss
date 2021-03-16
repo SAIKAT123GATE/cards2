@@ -1,0 +1,287 @@
+@import "./theme.scss";
+.section_card{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    background-color: $white;
+    padding:1rem 1rem;
+    width:100%;
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 0.5rem;
+}
+.horizontal-rule {
+    border-top: 1px solid $black;
+    margin-bottom: .3rem;
+    margin-top: 0.3rem;
+  }
+/*open card*/
+.opencard{
+    .type{
+        display: flex;
+        flex-direction: row;
+        padding: 0.5rem 0rem;
+        justify-content: space-between;
+        h4{
+            color: $green;
+            font-size: 1.3rem;
+        }
+        #txt{
+            font-size: 1.3rem;
+            color:$black;
+        }
+        
+    }
+    .info{
+        display: flex;
+        flex-direction: row;
+        padding: 0.5rem 0rem;
+        
+         img{
+            width:3.5rem;
+            height:3.5rem;        
+        }
+        .name{
+            padding:0.4rem 1rem;
+            h5{
+                font-family: nexa-light;
+            }
+        }
+
+    }
+    .details{
+        padding:0.5rem 0.0rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        .refid{
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 1rem;
+            i{
+                padding-top: 0.5rem;
+            }
+            #big{
+                font-size: 1.8rem !important;
+            }
+            .f{
+                    padding:0rem 1rem;
+                    h5{
+                        padding:0rem 0rem 0.3rem 0rem;
+                        font-family: nexa-bold;
+                    
+                    }
+                    h6{
+                        font-family: nexa-light;
+                        margin-bottom: 0.5rem;
+                    }
+            }
+            
+        }
+    }
+    .btn{
+        button{
+            font-size: 1.3rem;
+            padding: 1rem 0rem 0.8rem 0rem;
+            background-color:$green;
+            margin-top: 0.4rem;
+            color:$white;
+            
+            
+            }
+            .btnh{
+                color:$green;
+                border:1px $green solid;
+                background-color:$white;
+        }
+        
+            
+    }
+}
+/*calling card*/
+
+.callingcard{
+    #txt1{
+        color:$black;
+        font-size: 1.3rem;
+    }
+    .h4{
+        padding:0.5rem 0rem 0.6rem 0.0rem;
+        margin-bottom: 0.5rem;
+    }
+    .btn2{
+        padding:0rem 0.5rem;
+        button{
+            padding:0.8rem 0rem;
+            margin:0.1rem 0rem 0.3rem 0rem; 
+            font-size: 1.3rem;
+        }
+    }
+    
+    
+}
+/*picked up card*/
+.pickedupcard{
+    .h4{
+        padding:0.5rem 0rem 0.6rem 0.0rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    #txt2{
+        color: $black;
+        font-size: 1.3rem;
+    }
+    .btn2{
+        padding-left: 0.1rem;
+    }
+    
+}
+
+/*login follow up card*/
+.logfollowupcard{
+    #txt3{
+        color: $black;
+        font-size: 1.3rem;
+    }
+    .btn2{
+        padding-left: 0.1rem;
+    }
+    
+}
+/*follow up card*/
+.followupcard{
+    #txt4{
+        color: $black;
+        font-size: 1.3rem;
+    }
+}
+
+/*meeting*/
+.meeting{
+    #txt5{
+        color: $black;
+        font-size: 1.3rem;
+    }
+    .link{
+        .editlink{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-bottom: 1.5rem;
+            i{
+                font-size: 1.5rem !important;
+            }
+            label{
+                font-size: 1.5rem;
+                padding-left: 0.0rem;
+            }
+        }
+        a{
+            font-size: 1.5rem;
+            color:$green
+            
+        }
+        input{
+            margin-top: 1rem;
+        }
+        .editpart {
+            display: flex;
+            flex-direction: row;
+            padding-top: .3rem;
+            input {
+              border-top-right-radius: 0rem;
+              border-bottom-right-radius: 0rem;
+              font-size: 1.2rem;
+              width: 100%;
+              margin-right: 0rem;
+              padding-right: 0rem;
+              
+            }
+            i{
+                background-color: $green;
+                color: white;
+                font-size: 1.5rem;
+                padding:0.5rem;
+                padding-left: 0.7rem;
+                border-top-right-radius: 0.5rem;
+                border-bottom-right-radius: 0.5rem;
+                position:relative;
+                
+                margin:1rem 0.0rem 0.5rem 0rem;
+            
+                
+            }
+
+            }
+              
+
+              
+            
+          }
+          .radiobtn{
+              .normal{
+                input{
+                    width:auto;
+                    margin:.5rem 0rem;
+                    
+                }
+              }
+              label{
+                  font-size: 1.5rem;
+              }
+          }
+
+          #permalink_section
+        {
+             /* CSS3 */    
+            white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+            white-space: -pre-wrap; /* Opera 4-6 */    
+            white-space: -o-pre-wrap; /* Opera 7 */    
+            word-wrap: break-word; /* Internet Explorer 5.5+ */
+        }
+        
+    }
+
+@media only screen and(min-width:768px)
+    {
+        .card {
+            width: 30rem;
+            padding: 1.5rem 1rem;
+          }
+        
+        .opencard{
+            .details{
+                display: flex;
+                flex-direction:row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                .refid{
+                    width: 48%;
+                }
+            }
+        }
+        #callingcard{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        /*picked up card*/
+        .pickedupcard{
+            textarea{
+                border-radius: 0.5rem;    
+            }
+
+        }
+        /*meeting*/
+        
+        
+    }
+     
+
+        
+
+    
+

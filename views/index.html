@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Open</title>
+        <link href="./scss/reset.css"  rel="stylesheet">
+        <link href="./scss/theme.css" type="text/css" rel="stylesheet">
+        <link href="./scss/index.css"  rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="../time.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    </head>
+    <body onload="startTime()">
+        <section class="section_card">
+            <div class="card opencard">
+                <div class="type">
+                    <h4>Open</h4>
+                    <div id="txt"></div>
+                </div>
+                <div class="horizontal-rule"></div>
+                <div class="info">
+                    <div class="img_div">
+                    <img src="./scss/PngItem_1468479.png" alt="user"/>
+                    </div>
+                    <div class="name">
+                    <h4>Saikat Majumder</h4>
+                    <h5>8119954633</h5>
+                    </div>    
+                </div>
+
+                <div class="horizontal-rule"></div>
+
+                <div class="details">
+                    <div class="refid">
+                        <i class="fa fa-id-card-o"></i>
+                        <div class="f">
+                            <h6>Ref Id</h6>
+                            <h5>#123456</h5>
+                        </div>
+
+                    </div>
+                    <div class="refid">
+                        <i class="fa fa-envelope"></i>
+                        <div class="f">
+                            <h6>Email</h6>
+                            <h5>abc@gmail.com</h5>
+                        </div>
+                    </div>
+                    <div class="refid">
+                        <i  class="fa fa-user" id="big"></i>
+                        <div class="f">
+                            <h6> Occupation</h6>
+                            <h5>student</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn">
+                    <button type="submit">Call Now</button>
+                </div>
+                
+            </div>
+        </section>
+        <!--calling card-->
+        <section class="section_card">
+            <div class="card opencard callingcard">
+                <div class="type">
+                    <h4>Calling</h4>
+                    <div id="txt1"></div>
+                </div>
+                <div class="horizontal-rule"></div>
+                <h4 class="h4">This is calling card</h4>
+                <div class="btn">
+                    <button class="btnh" type="submit">Picked Up</button>
+                    <button type="submit">Not Picked up</button>
+                </div>
+            </div>
+            
+        </section>
+        <!--picked up-->
+        <section class="section_card">
+            <div class="card opencard callingcard pickedupcard">
+                <div class="type">
+                    <h4>Picked Up</h4>
+                    <div id="txt2"></div>
+                </div>
+                <div class="horizontal-rule"></div>
+                <h4 class="h4">This is the Picked Up card</h4>
+                <p>Comment</p>
+                <textarea rows="10"  placeholder="Comment here..."></textarea>
+                <div class="btn">
+                    <button class="btnh" type="submit">Follow Up</button>
+                    <button type="submit">Registration</button>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--login Follow up card-->
+        <section class="section_card">
+            <div class="card opencard callingcard logfollowupcard">
+                <div class="type">
+                    <h4>Login-Follow-Up</h4>
+                    <div id="txt3"></div>
+                </div>
+                <div class="horizontal-rule"></div>
+                <h4 class="h4">This is the Title</h4>
+                <p>Comment</p>
+                <textarea rows="10" cols="40" placeholder="Comment here..."></textarea>
+                <input type="date" id="birthday" name="birthday">
+                <div class="btn">
+                    <button class="btnh" type="submit">Follow Up</button>
+                    <button type="submit">Submit</button>
+                </div>
+                </div>
+            </section>
+
+        <!--Follow-up-->
+        <section class="section_card">
+            <div class="card opencard callingcard followupcard">
+                <div class="type">
+                    <h4>Follow-Up</h4>
+                    <div id="txt4"></div>
+                </div>
+                <div class="horizontal-rule"></div>
+                <h4 class="h4">This is the Title</h4>
+                <input type="date" id="birthday" name="birthday">
+                <div class="btn">
+                    <button type="submit">Submit</button>
+                </div>
+
+            </div>
+        </section>
+
+        <!--Arrange a meeting-->
+
+        <section class="section_card">
+            <div class="card opencard callingcard followupcard meeting">
+                <div class="type">
+                    <h4>Arrange a meeting</h4>
+                    <div id="txt5"></div>
+                </div>
+                <div class="horizontal-rule"></div>
+                <h4 class="h4">This is the Title</h4>
+                <div class="link">
+                    <div class="editlink">
+                        <label>Link</label>
+                        <i class="fa fa-edit" onclick="toggle_visibility('toggle');"></i>
+                    </div>
+                    <div id='permalink_section'>
+                    <a href="https://www.amazon.com/" target="blank" id="linkup">Www.amazon.com</a>
+                    </div>
+                    <div class="editpart" id="toggle" style="display: none;">
+                        <input type="text" id="link" name="link">
+                        <i class="fa fa-check-square-o"  onclick="change('link');"></i>
+                    </div>
+                    <input type="date" id="birthday" name="birthday">
+                    <div class="radiobtn">
+                        <div class="normal">
+                            <input type="radio" id="success" name="status" value="success" onclick="hide('toggle2');">
+                            <label for="male">Success</label>
+                        </div>
+                        <div class="normal">
+                            <input type="radio" id="failed" name="status" value="failed" onclick="display('toggle2');">
+                            <label for="male">Failed</label>
+                        </div>
+                    </div>
+
+                    <div id="toggle2" style="display: none;">
+                        <p>Comment</p>
+                        <textarea rows="10"placeholder="Comment here..."></textarea>
+                    </div>
+
+                </div>
+                <div class="btn">
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+        </section>
+        
+    </body>
+</html>
