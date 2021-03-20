@@ -4,7 +4,7 @@
 }
 
 @font-face {
-  font-family: nexa-light;
+  font-family: "nexa-light";
   src: url("../fonts/Nexa-Light.otf");
 }
 
@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   font-family: nexa-light;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   padding: 0.5rem 0rem 0.8rem 0.0rem;
 }
 
@@ -35,11 +35,13 @@ h3 {
 h4 {
   font-size: 1.5rem;
   color: black;
+  font-weight: 600;
 }
 
 h5 {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   padding-top: 0.35rem;
+  font-weight: 600;
 }
 
 h6 {
@@ -111,7 +113,9 @@ label {
 
 @media only screen and (min-width: 768px) {
   button {
-    width: 30%;
+    width: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
@@ -156,7 +160,7 @@ label {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 0.5rem 0rem;
+  padding: 0.0rem 0rem 0.6rem 0rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -194,10 +198,11 @@ label {
 
 .opencard .info .name h5 {
   font-family: nexa-light;
+  font-weight: normal;
 }
 
 .opencard .details {
-  padding: 0.5rem 0.0rem;
+  padding: 0.5rem 0.0rem 0rem 0rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -217,7 +222,7 @@ label {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-bottom: 1rem;
+  margin-bottom: 0.9rem;
 }
 
 .opencard .details .refid i {
@@ -239,12 +244,12 @@ label {
 
 .opencard .details .refid .f h6 {
   font-family: nexa-light;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
 }
 
 .opencard .btn button {
   font-size: 1.3rem;
-  padding: 1rem 0rem 0.8rem 0rem;
+  padding: 0.9rem 1.3rem 0.9rem 1.3rem;
   background-color: #06725c;
   margin-top: 0.4rem;
   color: white;
@@ -264,7 +269,6 @@ label {
 
 .callingcard .h4 {
   padding: 0.5rem 0rem 0.6rem 0.0rem;
-  margin-bottom: 0.5rem;
 }
 
 .callingcard .btn2 {
@@ -314,6 +318,10 @@ label {
   font-size: 1.3rem;
 }
 
+.meeting .link #birthday {
+  margin-bottom: 1.0rem;
+}
+
 .meeting .link .editlink {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -325,7 +333,8 @@ label {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
+  margin-top: .5rem;
 }
 
 .meeting .link .editlink i {
@@ -333,7 +342,7 @@ label {
 }
 
 .meeting .link .editlink label {
-  font-size: 1.5rem;
+  font-size: 1.15rem;
   padding-left: 0.0rem;
 }
 
@@ -354,28 +363,34 @@ label {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding-top: .3rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
 }
 
 .meeting .link .editpart input {
   border-top-right-radius: 0rem;
   border-bottom-right-radius: 0rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   width: 100%;
-  margin-right: 0rem;
   padding-right: 0rem;
+  margin: 0rem 0rem;
 }
 
 .meeting .link .editpart i {
   background-color: #06725c;
   color: white;
-  font-size: 1.5rem;
-  padding: 0.5rem;
-  padding-left: 0.7rem;
+  font-size: 1.9rem;
+  padding: 1.0rem;
+  padding-left: 0.5rem;
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
-  position: relative;
-  margin: 1rem 0.0rem 0.5rem 0rem;
+  border: 0px solid #06725c;
+  margin: 0.0rem 0.0rem 0.0  rem 0rem;
 }
 
 .meeting .radiobtn .normal input {
@@ -420,6 +435,9 @@ label {
   }
   .opencard .details .refid {
     width: 48%;
+  }
+  .opencard .btn .btnh {
+    margin-right: 0.5rem;
   }
   #callingcard {
     display: -webkit-box;

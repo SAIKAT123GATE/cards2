@@ -4,7 +4,7 @@
 }
 
 @font-face {
-  font-family: nexa-light;
+  font-family: "nexa-light";
   src: url("../fonts/Nexa-Light.otf");
 }
 
@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   font-family: nexa-light;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   padding: 0.5rem 0rem 0.8rem 0.0rem;
 }
 
@@ -35,11 +35,13 @@ h3 {
 h4 {
   font-size: 1.5rem;
   color: black;
+  font-weight: 600;
 }
 
 h5 {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   padding-top: 0.35rem;
+  font-weight: 600;
 }
 
 h6 {
@@ -111,7 +113,9 @@ label {
 
 @media only screen and (min-width: 768px) {
   button {
-    width: 30%;
+    width: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 /*# sourceMappingURL=theme.css.map */
